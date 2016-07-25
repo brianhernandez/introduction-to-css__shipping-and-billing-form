@@ -1,0 +1,118 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2em;
+	color: #97ADD3;
+}
+
+form {
+	margin: 0 auto 100px;
+	max-width: 800px;
+	background: #EAEFF6 url(https://cloud.githubusercontent.com/assets/1489880/17080566/b2b26fa4-5102-11e6-8385-18ad7bc9a521.jpg);
+}
+
+h1 {
+	text-align: center;
+}
+
+fieldset {
+	border: none;
+	line-height: 1.4em;
+	word-spacing: 5px;
+}
+legend {
+	top: 20px;
+	font-weight: 700;
+}
+
+label {
+	display: inline-block;
+	width: calc(330px - 20px);
+	margin-right: 20px;
+	text-align: right;
+	cursor: pointer;
+}
+
+input,
+input[type="checkbox"] +  span {
+	border: 1px solid #97ADD3;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: rgba(255,255,255,.0);
+	color: #3593F2;
+	display: inline-block;
+}
+
+input {
+	width: 300px;
+	font-size: 1.2rem;
+	outline: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] +  span {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	content: '';
+	font-family: 'FontAwesome';
+}
+
+input[type="checkbox"]:checked +  span::after {
+	content: '\f00c';
+	position: relative;
+	top: -8px;
+	left: -6px;
+}
+
+select {
+	-webkit-appearance: none;
+	border: 1px solid #97ADD3;
+	padding: 5px;
+	font-size: 1.2rem;
+	display: inline-block;
+	margin: 0 auto;
+	width: 300px;
+	background-color: rgba(255,255,255,.0);
+	color: #3593F2;
+}
+input,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input:focus,
+select:focus {
+	outline: 2px solid #3593F2;
+}
+
+select::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+   color: #E1E1E1;
+}
+
+select:-moz-placeholder,
+input:-moz-placeholder { /* Firefox 18- */
+   color: #E1E1E1;  
+}
+
+select::-moz-placeholder,
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: #E1E1E1;  
+}
+
+select:-ms-input-placeholder,
+input:-ms-input-placeholder {  
+   color: #E1E1E1;  
+}
+
