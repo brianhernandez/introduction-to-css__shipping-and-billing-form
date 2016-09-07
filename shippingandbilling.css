@@ -116,14 +116,14 @@ input:-ms-input-placeholder {
    color: #E1E1E1;  
 }
 
-.navigation {
+#navigation {
   margin-top: 2em;
   list-style: none;
   text-align: center;
   padding-left: 0;
 }
 
-.navigation a {
+#navigation a {
   display: inline-block;
   padding: 20px 180px;
   text-decoration: none;
@@ -131,8 +131,8 @@ input:-ms-input-placeholder {
   color: #000;
 }
 
-.navigation a:hover,
-.navigation a:focus {
+#navigation a:hover,
+#navigation a:focus {
   background: 
     linear-gradient(
       to bottom right, 
