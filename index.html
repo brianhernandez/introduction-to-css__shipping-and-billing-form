@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>Shipping and Billing Form</h1>
-	<form action="shippingandbilling.html" method="post">
+	<form id="shipform" action="shippingandbilling.html" method="post">
 		<fieldset>
 			<legend>Billing Information</legend>
 			<label for="b_fname">First Name:</label><input type="text" id="b_fname" name="b_fname" placeholder="Nao"><br>
@@ -17,7 +17,7 @@
 			<label for="b_address1">Address 1:</label><input type="text" id="b_address1" name="b_address1" placeholder="5-3, Yaesu 1-Chome"><br>
 			<label for="b_address2">Address 2:</label><input type="text" id="b_address2" name="b_address2" placeholder="Berumezon Biru"><br>
 			<label for="b_city">City:</label><input type="text" id="b_city" name="b_city" placeholder="Tokyo"><br>
-			<label for="b_country">Country:</label><select id="country">
+			<label for="b_country">Country:</label><select id="b_country">
 				<option value="" disabled selected>Japan</option>
 				<option value="AF">Afghanistan</option>
 				<option value="AX">Åland Islands</option>
@@ -531,10 +531,13 @@
 				<option value="ZW">Zimbabwe</option>
 			</select>
 		</fieldset>
+		<button type="submit">Submit</button>
 	</form>
 	<ul id="navigation">
 		<li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/forms.html">Form Projects Homepage</a></li>
 		<li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/">Projects Homepage</a></li>
 	</ul>
+	<script type="text/javascript" src="validator.js"></script>
+  <script type="text/javascript" src="shipping-validate.js"></script>
 </body>
 </html>
