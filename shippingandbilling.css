@@ -38,8 +38,18 @@ label {
 	cursor: pointer;
 }
 
-input,
-input[type="checkbox"] +  span {
+#b_fname,
+#b_lname,
+#b_address1,
+#b_address2,
+#b_city,
+#b_country,
+#s_fname,
+#s_lname,
+#s_address1,
+#s_address2,
+#s_city,
+#s_country {
 	border: 1px solid #97ADD3;
 	border-radius: 5px;
 	padding: 5px;
@@ -49,30 +59,44 @@ input[type="checkbox"] +  span {
 	display: inline-block;
 }
 
-input {
+#b_fname,
+#b_lname,
+#b_address1,
+#b_address2,
+#b_city,
+#b_country,
+#s_fname,
+#s_lname,
+#s_address1,
+#s_address2,
+#s_city,
+#s_country {
 	width: 300px;
 	font-size: 1.2rem;
 	outline: none;
 }
 
 input[type="checkbox"] {
-	display: none;
+	/*display: none;*/
+  margin-bottom: .9rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 input[type="checkbox"] +  span {
-	cursor: pointer;
-	width: 20px;
-	height: 20px;
-	vertical-align: middle;
-	content: '';
-	font-family: 'FontAwesome';
+	/*cursor: pointer;*/
+	/*width: 20px;*/
+	/*height: 20px;*/
+	/*vertical-align: middle;*/
+	/*content: '';*/
+	/*font-family: 'FontAwesome';*/
 }
 
 input[type="checkbox"]:checked +  span::after {
-	content: '\f00c';
-	position: relative;
-	top: -8px;
-	left: -6px;
+	/*content: '\f00c';*/
+	/*position: relative;*/
+	/*top: -8px;*/
+	/*left: -6px;*/
 }
 
 select {
@@ -86,8 +110,19 @@ select {
 	background-color: rgba(255,255,255,.0);
 	color: #3593F2;
 }
-input,
-select {
+
+#b_fname,
+#b_lname,
+#b_address1,
+#b_address2,
+#b_city,
+#b_country,
+#s_fname,
+#s_lname,
+#s_address1,
+#s_address2,
+#s_city,
+#s_country {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
